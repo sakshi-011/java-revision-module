@@ -43,9 +43,9 @@ public static void main(String args[]){
 final method can't be overridden, final class can't be inherited.
 
 
-*Spring Boot*
+# Spring Boot
 
 
-Java-based spring framework used for Rapid Application Development (to build stand-alone microservices)
--- has auto configuration
+Java-based spring framework used for Rapid Application Development (to build stand-alone microservices)<br/>
+-- has auto configuration<br/>
 -- embedded application server like tomcat,jetty
