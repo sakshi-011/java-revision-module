@@ -41,3 +41,11 @@ public static void main(String args[]){
 
 **final** keyword - final variables can't be modified, final variable which is not assigned to any value can only be assigned through the class constructor
 final method can't be overridden, final class can't be inherited.
+
+
+*Spring Boot*
+
+
+Java-based spring framework used for Rapid Application Development (to build stand-alone microservices)
+-- has auto configuration
+-- embedded application server like tomcat,jetty
