@@ -42,6 +42,21 @@ public static void main(String args[]){
 **final** keyword - final variables can't be modified, final variable which is not assigned to any value can only be assigned through the class constructor
 final method can't be overridden, final class can't be inherited.
 
+Order of execution of statements -   
+static variables -> static block -> instance block -> main method 
+
+
+An unsigned number contains just zero or positive values, whereas a signed number has both positive and negative numbers along with the value zero.   
+By placing a zero in front of the number is an integer in octal form. int x = 010; is in octal form so its value is 8.  
+Floating-point numbers are by default of type double.  
+Range of byte data in java is -128 to 127. But byte data type in java is cyclic in nature. byte b = 127; b++; (b = -128)
+
+
+Initial capacity of ArrayList = 10  
+Initial capacity of HashMap/HashSet = 16  
+Initial capacity of HashTable = 11  
+Load Factor for all - 0.75, i.e. size of obj doubles after reaching 75% capacity.
+
 
 # Spring Boot
 
