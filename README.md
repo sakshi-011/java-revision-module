@@ -69,7 +69,7 @@ Load Factor for all - 0.75, i.e. size of obj doubles after reaching 75% capacity
                 return val;
             }
         }
-        class derived extends b{
+        class derived extends base{
             derived(){
                 addVal();
             }
@@ -78,10 +78,14 @@ Load Factor for all - 0.75, i.e. size of obj doubles after reaching 75% capacity
                 val += 20;
             }
         }
-        b obj = new d();
+        base obj = new derived();
         System.out.println(obj.getVal());
     Output = 40
     Base class contructor --> getVal() of derived class is executed --> derived class constructor --> getVal() of derived class
+
+If you create object of subclass with reference of super class like ( A a = new B();) then subclass method and super class variable will be executed.
+When a reference to a subclass object is assigned to a super class reference variable, we will have access only to those parts of the object defined by the superclass.  
+
 
 
 # Spring Boot
