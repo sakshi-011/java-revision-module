@@ -43,8 +43,7 @@ public static void main(String args[]){
 final method can't be overridden, final class can't be inherited.
 
 Order of execution of statements -   
-static variables -> static block -> instance block -> main method 
-
+static variables -> static block -> instance block -> main method
 
 An unsigned number contains just zero or positive values, whereas a signed number has both positive and negative numbers along with the value zero.   
 By placing a zero in front of the number is an integer in octal form. int x = 010; is in octal form so its value is 8.  
@@ -56,6 +55,33 @@ Initial capacity of ArrayList = 10
 Initial capacity of HashMap/HashSet = 16  
 Initial capacity of HashTable = 11  
 Load Factor for all - 0.75, i.e. size of obj doubles after reaching 75% capacity.
+
+    class base{
+            int val = 0;
+            base(){
+                addVal();
+            }
+            void addVal(){
+                System.out.println("Base addVal "+val);
+                val += 10;
+            }
+            int getVal(){
+                return val;
+            }
+        }
+        class derived extends b{
+            derived(){
+                addVal();
+            }
+            void addVal(){
+                System.out.println("Derived addVal "+val);     
+                val += 20;
+            }
+        }
+        b obj = new d();
+        System.out.println(obj.getVal());
+    Output = 40
+    Base class contructor --> getVal() of derived class is executed --> derived class constructor --> getVal() of derived class
 
 
 # Spring Boot
