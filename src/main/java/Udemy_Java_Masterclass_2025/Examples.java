@@ -1,4 +1,4 @@
-package main.java;
+package main.java.Udemy_Java_Masterclass_2025;
 
 public class Examples {
 
